@@ -3,7 +3,11 @@ import Vuex from 'vuex'
 export default () => {
   return new Vuex.Store({
     state: () => ({
-      items: [{'data': 'dummy'}]
+      items: [
+        {data: {
+          title: 'title'
+        }}
+      ]
     }),
     mutations: {
       add(state, item) {
